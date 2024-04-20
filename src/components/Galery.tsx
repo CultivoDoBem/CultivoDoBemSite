@@ -55,7 +55,7 @@ const Galery = () => {
   });
 
   return (
-    <section className="my-[90px] items-center max-w-[1210px] mx-auto">
+    <section className="my-[40px] items-center max-w-[1210px] mx-auto">
       <h2 className="font-bold pb-5  text-center text-[#232b2b] text-[2.5rem]">
         Galeria
       </h2>

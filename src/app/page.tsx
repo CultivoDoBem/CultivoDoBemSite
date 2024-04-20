@@ -19,7 +19,7 @@ export default function Home() {
           alt="Agriculture image"
         />
         <div className='flex absolute gap-[2.5rem] items-center max-w-[650px] flex-col bottom-4 bg-[#1E5044] pt-[2.5vw] pb-[3vw] px-[6vw]'>
-          <p className='text-base text-center text-white font-medium uppercase'>Bem-vindo à</p>
+          <p className='text-base text-center text-white font-medium uppercase'>Bem-vindo ao</p>
 
           <h1 className='text-base uppercase text-center text-[2.5rem] font-medium text-white'>Cultivo do Bem</h1>
         </div>
