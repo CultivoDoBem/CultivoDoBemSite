@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import React, { useState } from 'react';
 import Image from 'next/image';
@@ -95,26 +95,28 @@ const Galery = () => {
       </div>
       {loaded && instanceRef.current && (
         <div className="dots">
-          {[
-            ...Array(instanceRef.current.track.details.slides.length).keys(),
-          ].map((idx) => {
-            return (
-              <button
-                key={idx}
-                onClick={() => {
-                  instanceRef.current?.moveToIdx(idx);
-                }}
-                className={'dot' + (currentSlide === idx ? ' active' : '')}
-              ></button>
-            );
-          })}
+          {Array.from({
+            length: instanceRef.current.track.details.slides.length,
+          })
+            .fill('')
+            .map((_, idx) => {
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    instanceRef.current?.moveToIdx(idx);
+                  }}
+                  className={'dot' + (currentSlide === idx ? ' active' : '')}
+                ></button>
+              );
+            })}
         </div>
       )}
     </section>
   );
 };
 
-function Arrow(props) {
+function Arrow(props: any) {
   const disabled = props.disabled ? ' arrow--disabled' : '';
   return (
     <svg
